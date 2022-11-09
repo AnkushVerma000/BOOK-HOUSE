@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>BOOK HOUSE</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media queries.css" media="all">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">BOOK HOUSE</a>
+        <ul>
+            <li><a href="library.html">Home</a></li>
+            <li><a href="book.html">Books</a></li>
+            <li><a href="Contact.html"class="active">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="maxresdefault.jpg" id="stars">
+
+        
+    </section>
+</div>
+  <br><br>
+  <div class="pec"><a id="pec"></a>
+    <h1>      ASK YOUR QUERIES HERE</h1></div>
+    <br>
+    <div><a id="button"></a>
+<div class="container">
+  
+      <form
+action="https://formspree.io/f/xrgdbjra" method="POST" id="my-form">
+
+
+
+<div class="form-group">
+<label for="Name"></label>
+<input type="text" id="Name" name="Name" placeholder="Name">
+</div>
+<div class="form-group">
+<label for="Email"></label>
+<input type="Email" id="Email" name="Email" placeholder="E-mail">
+</div>
+<div class="form-group">
+<label for="Message"></label>
+<textarea name="message" id="message" cols="50" rows="3" placeholder="QUERIES"></textarea>
+</div>
+   
+<button type="submit">Submit</button>
+</form>
+</div>
+<div id="status"></div>
+
+</div>
+</section>
+
+<br><br>
+<div id="status"></div>
+<div class="footer">
+  <div class="links">
+    
+    
+      <details>
+        <summary> Social Media</summary>
+        <p>Instagram</p>
+        <p>Linkdin</p>
+        <p>Git-hub</p>
+      </details> 
+      <br>
+    <ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <li><a >E-mail - vermaankush2004@gmail.com</a></li>
+      <li><a>Phone no. - 7018605607 ,</a></li>
+    
+     
+      </ul>
+      <br>
+      <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      
+      
+      <li class="copyright">
+    © 2022 ANKUSH VERMA </li>
+    </ul>
+  </div>
+ 
+  <script>
+    var form = document.getElementById("my-form");
+   
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission !";
+          form.reset()
+          
+
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form !"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML ="Oops! There was a problem submitting your form !"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+    document.getElementById("status").style.textAlign = "center";
+    document.getElementById("status").style.color = "red";
+    document.getElementById("status").style.padding = "10px";
+</script>

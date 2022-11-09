@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BEE.css">
+    
+   
+    <title>BASIC ELECTRICAL ENGINEERING</title>
+</head>
+<body>
+    <div class="footer">
+    <div class="links">
+       
+        <h2>BASIC ELECTRICAL ENGINEERING</h2>
+        <script src="https://kit.fontawesome.com/a6bce00563.js" crossorigin="anonymous"></script>
+        <div class="main">
+            <div class="box">
+                <img src="National Library Kolkata.jpg"  alt="">
+                <div class="details">
+                    <br><br>
+                    
+                    <li><a href="http://www.nationallibrary.gov.in/" target="blank">National Library of India,Kolkata </a></li>
+                    <ul>   
+                          </ul>
+                </div>
+            </div>
+            <div class="box">
+                <img src="delhi public library.jpg"  alt="">
+                <div class="details"> 
+                    <li><a href="http://www.nationallibrary.gov.in/" target="blank">Delhi Public Library</a></li>
+                
+                    
+                  
+                </div>
+            </div>
+            <div class="box">
+                <img src="saraswati  mahal library.jpg"     alt="">
+                <div class="details">
+                    <li><a href="http://www.nationallibrary.gov.in/" target="blank">SM Library , Tamil Nadu</a></li>
+                
+                   
+                   
+                </div>
+            </div>
+        </div>
+           <div class="main">
+        <div class="box">
+            <img src="Anna-Central-Library.jpg"  alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank">Anna Centenary Library, Chennai</a></li>
+                
+                
+              
+            </div>
+        </div>
+        <div class="box">
+            <img src="krishnadas shama library Goa.jpg"  alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank">Krishnadas Shama Central Library , Goa</a></li>
+                
+                
+              
+            </div>
+        </div>
+        <div class="box">
+            <img src="University-of-Allahabad.jpg"     alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank">Allahabad Public Library , Allahabad</a></li>
+                
+             
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box">
+            <img src="Hansa mehta library.jpg"  alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank"> Smt. Hansa Mehta Library , Baroda</a></li>
+                
+            
+               
+            </div>
+        </div>
+        <div class="box">
+            <img src="connemara public library.jpg"  alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank"> CP Library, Chennai</a></li>
+                
+                
+             
+            </div>
+        </div>
+        <div class="box">
+            <img src="state central library kerala.jpg"     alt="">
+            <div class="details">
+                <li><a href="http://www.nationallibrary.gov.in/" target="blank"> State Central Library , Thiruvananthapuram</a></li>
+                
+                
+               
+                
+            </div>
+        </div>
+    </div>
+        
+          
+        
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br><br><br>
+  
+
+    <a class="copyright"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        © 2022 ANKUSH VERMA</a><br><br><br><br>
+        </ul>
+      </div>
+
+
+
+
+<script>
+    let stars = document.getElementById("stars")
+    let moon = document.getElementById("moon")
+    let mountains_behind = document.getElementById("mountains_behind")
+    let mountains_front = document.getElementById("mountains_front")
+    let text = document.getElementById("text")
+    let btn= document.getElementById("btn")
+    let header = document.querySelector('header')
+
+    addEventListener('scroll', function() { // Scrooling effects
+        let value = scrollY;
+        stars.style.left = Math.min(value * 0.25 , stars.height) + "px";
+        moon.style.top = Math.min(value * 1.05 , moon.height) + "px";
+        mountains_behind.style.top = Math.min(value * 0.5 , mountains_behind.height) + "px";
+        mountains_front.style.top = Math.min(value * 0 , mountains_front.height) + "px";
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 0.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+    
+</script>

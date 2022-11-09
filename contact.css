@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap'); /* Import Font Family */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: black;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul { 
+    
+    display: flex;
+    font-weight: 700;
+   justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    color: black;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 20px;
+   
+}
+
+header ul li a:hover, .active {
+    color: white;
+    background-color: grey;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+
+}
+
+#text {
+    position: absolute;
+    right: -850px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+  
+
+.footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .links ul li a{
+	color: white;
+	font-size: 18px;
+}
+
+.footer .copyright{
+	color: #999;	
+}
+.footer .links.details .summary {
+    color: aliceblue;
+}
+.footer .links .details .summary p {
+    color: aliceblue; 
+}
+form{
+    position: relative;
+    background:  black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    left: 35%;
+  }
+  
+  form h3{
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: black;
+    font-size: 16px;
+    color: white;
+  }
+  form button{
+    padding: 15px;
+    background: black;
+    color: white;
+    font: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
+  .pec{
+    text-align: center;
+    color: white;
+  }
