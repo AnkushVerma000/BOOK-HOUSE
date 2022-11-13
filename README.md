@@ -14,5 +14,5 @@ to upload your books for other users .
 </p>
        
 ### **Contributors:
-Ankush Verma - Website Development 
+Ankush Verma 
 
